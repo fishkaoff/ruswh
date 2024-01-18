@@ -1,19 +1,24 @@
+@import '@assets/styles/variables';
+
 .nav_menu {
     ul {
         list-style-type: none;
         display: flex;
+        padding: 0;
+        margin: 0;
     }
 
     .nav_item {
+        font-family: $textFont;
+        color: $secondaryColor;
+        font-size: $smallFontSize;
         text-decoration: none;
-        color: #fff;
         padding-right: 20px;
-        font-size: 16px;
     }
 
     .nav_item:hover {
-        color: #b9b9b9;
-        transition: 0.3s;
+        color: #5330dd;
+        transition: 0.5s;
     }
 }
 
