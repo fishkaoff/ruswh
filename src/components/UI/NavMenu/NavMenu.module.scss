@@ -10,14 +10,14 @@
 
     .nav_item {
         font-family: $textFont;
-        color: $secondaryColor;
-        font-size: $smallFontSize;
+        color: $mainColor;
+        font-size: $xlTextSize;
         text-decoration: none;
         padding-right: 20px;
     }
 
     .nav_item:hover {
-        color: #5330dd;
+        color: $secondaryColor;
         transition: 0.5s;
     }
 }

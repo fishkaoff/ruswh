@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 import styles from './NavMenu.module.scss'
 import { MenuItems } from './NavMenu.data'
 
@@ -8,7 +9,7 @@ const NavMenu = () => {
         <ul>
             {MenuItems.map(MenuItem => (
                 <li>
-                    <a href={MenuItem.link} key={MenuItem.link} className={styles.nav_item}>{MenuItem.name}</a>
+                    <Link to={MenuItem.link} key={MenuItem.link} className={styles.nav_item}>{MenuItem.name}</Link>
                 </li>
             ))}
         </ul>

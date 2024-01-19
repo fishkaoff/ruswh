@@ -5,7 +5,7 @@ import LogoImage from '@assets/img/logo.svg'
 const Logo = () => {
   return (
     <div className={styles.logo}>
-        <a href="#">
+        <a href='#'>
           <img src={LogoImage} alt="ruswh logo"/> 
         </a>
     </div>

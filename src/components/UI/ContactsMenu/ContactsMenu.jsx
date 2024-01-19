@@ -8,9 +8,9 @@ import { Credentials } from './ContactsMenu.data.js'
 const ContactsMenu = () => {
   return (
     <div className={styles.contacts_menu}>
+        
         <div className={styles.left}>
             <img src={EmailIcon} alt="email icon" className={styles.icon}/>
-        
             <a href={"mailto:"+Credentials.email} className={styles.text}>{Credentials.email}</a>
         </div>
 
@@ -18,6 +18,7 @@ const ContactsMenu = () => {
             <img src={PhoneIcon} alt="phone icon" className={styles.icon}/>
             <a href={"tel:"+Credentials.phone} className={styles.text}>{Credentials.phone}</a>
         </div>
+
     </div>
   )
 }
