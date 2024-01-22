@@ -1,24 +1,41 @@
 @import '@assets/styles/variables';
 
 .nav_menu {
+  ul {
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+  }
+
+  .nav_item {
+    font-family: $textFont;
+    color: $mainColor;
+    font-size: $xlTextSize;
+    text-decoration: none;
+    padding-right: 20px;
+  }
+
+  .nav_item:hover {
+    color: $secondaryColor;
+    transition: 0.5s;
+  }
+
+  .burger_bars {
+    display: none;
+    color: #ffffff;
+    height: 16px;
+  }
+
+  @media only screen and (max-width: 992px) {
     ul {
-        list-style-type: none;
-        display: flex;
-        padding: 0;
-        margin: 0;
+      display: none;
     }
 
-    .nav_item {
-        font-family: $textFont;
-        color: $mainColor;
-        font-size: $xlTextSize;
-        text-decoration: none;
-        padding-right: 20px;
+    .burger_bars {
+      display: block;
     }
-
-    .nav_item:hover {
-        color: $secondaryColor;
-        transition: 0.5s;
-    }
+  }
 }
+
 

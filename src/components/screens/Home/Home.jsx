@@ -1,6 +1,6 @@
 import React from 'react'
 import Header from '../../elements/Header/Header'
-import Start from './Start/Start'
+import Start from '../../elements/Start/Start'
 
 import styles from './Home.module.scss'
 
