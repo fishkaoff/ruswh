@@ -1,0 +1,28 @@
+@import "@assets/styles/variables";
+
+.items {
+  display: block;
+  height: 100%;
+
+  .up,
+  .down {
+    height: 50%;
+  }
+
+  .up:hover,
+  .down:hover {
+    background-color: #2d2e2f;
+    transition: 1s;
+    cursor: pointer;
+  }
+}
+
+.fb,
+.foksla {
+  font-family: $titleFont;
+  font-size: $xlTitleSize;
+  color: $mainColor;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 65px;
+}

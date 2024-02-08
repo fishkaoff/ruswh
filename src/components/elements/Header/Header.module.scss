@@ -1,10 +1,17 @@
 @import '@assets/styles/variables';
 
 .header {
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 1px solid $mainColor;
-    padding-top: 30px;
+    height: 100px;
+    background-color: #2D2E2F;
+
+    .sides {
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+        margin: 0 auto;
+        padding-top: 35px;
+        text-transform: lowercase;
+    }
 
     @media only screen and (max-width: 992px) {
         .center {

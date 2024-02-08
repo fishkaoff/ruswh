@@ -1,0 +1,12 @@
+@import '@assets/styles/variables';
+.left, .right {
+    width: 50%;
+
+    img {
+        width: 100%;
+    }
+}
+
+.sides {
+    display: flex;
+}

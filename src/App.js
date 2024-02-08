@@ -6,13 +6,6 @@ function App() {
   return <BrowserRouter>
     <Routes> 
       <Route element={<Home/>} path='/'/>
-
-      <Route element={<Home/>} path='/company'/>
-
-      <Route element={<Home/>} path='/works'/>
-
-      <Route element={<Home/>} path='/contacts'/>
-      
       <Route element={<div>Not found</div>} path='*'/>
     </Routes>
   </BrowserRouter>

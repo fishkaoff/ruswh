@@ -1,18 +1,18 @@
 export const MenuItems = [
     {
-        link: "/company",
+        link: "/about",
         name: "О компании"
     },
     {
-        link: "/company",
-        name: "Услуги"
+        link: "/technologies",
+        name: "Технологии"
     },
     {
-        link: "/company",
+        link: "/works",
         name: "Проекты"
     },
     {
-        link: "/company",
+        link: "/contacts",
         name: "Контакты"
     },
 ]

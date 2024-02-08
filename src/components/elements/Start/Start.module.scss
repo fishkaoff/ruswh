@@ -1,70 +1,9 @@
 @import '@assets/styles/variables';
 
-.wrapper {
-  display: flex;
-  justify-content: space-between;
-  padding-top: 50px;
-  padding-bottom: 30px;
-}
-
-.left {
-  width: 700px;
-
-  .title {
-    font-family: $textFont;
-    font-size: $xlTitleSize;
-    color: $mainColor;
-
-    span {
-      color: $secondaryColor;
-    }
-  }
-}
-
-.right {
-  width: 260px;
-
-  .text {
-    font-family: $textFont;
-    font-size: 20px;
-    color: $mainColor;
-    padding-bottom: 55px;
-
-    text-align: justify;
-  }
-
-}
-
 .start {
-  img {
-    width: 100%;
-    height: 600px;
+  .up, .down {
+    height: 50%;
   }
+  padding-bottom: 70px;
 }
 
-
-@media only screen and (max-width: 992px) {
-  .wrapper {
-    display: block;
-
-    .title {
-      width: 620px;
-      font-size: $lgTitleSize;
-      text-align: left;
-    }
-
-    .right {
-      width: 100%;
-      display: flex;
-      justify-content: space-between;
-
-      padding-top: 20px;
-
-      .text {
-        width: 65%;
-        padding: 0;
-        font-size: $lgTextSize;
-      }
-    }
-  }
-}
