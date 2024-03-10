@@ -11,8 +11,9 @@
 
   .up:hover,
   .down:hover {
-    background-color: #2d2e2f;
-    transition: 1s;
+    // background-color: #2d2e2f;
+    background-color: $secondaryColor;
+    transition: 1.5s;
     cursor: pointer;
   }
 }
