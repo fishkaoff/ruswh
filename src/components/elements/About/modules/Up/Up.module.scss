@@ -1,36 +1,38 @@
-@import '@assets/styles/variables';
-.left, .right {
-    width: 50%;
+@import "@assets/styles/variables";
+.left,
+.right {
+  width: 50%;
 
-    img {
-        width: 100%;
-    }
+  img {
+    width: 100%;
+  }
 }
 
 .sides {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 
-    .right {
-        .title, .text {
-            color: $mainColor;
-            padding-left: 40px;
-        }
-
-        .title {
-            font-family: $titleFont;
-            font-weight: 400;
-            font-size: $xlTitleSize;
-            text-transform: uppercase;
-            padding-top: 20px;
-        }
-
-        .text {
-            font-family: $textFont;
-            font-size: $xlTextSize;
-            padding-top: 20px;
-            color: gray;
-        }
+  .right {
+    .title,
+    .text {
+      color: $mainColor;
+      padding-left: 40px;
     }
+
+    .title {
+      font-family: $titleFont;
+      font-weight: 400;
+      font-size: $xlTitleSize;
+      text-transform: uppercase;
+      padding-top: 20px;
+    }
+
+    .text {
+      font-family: $textFont;
+      font-size: $xlTextSize;
+      padding-top: 20px;
+      color: gray;
+    }
+  }
 }

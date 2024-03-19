@@ -3,26 +3,30 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, EffectFade } from "swiper/modules";
 
-import "swiper/css";
-import "swiper/css/autoplay";
-import "swiper/css/effect-fade";
-const StartSlider = () => {
-  const images = [
-    "http://ruswh.ru/slider-image-1.jpg",
-    "http://ruswh.ru/slider-image-2.jpg",
-    "http://ruswh.ru/slider-image-3.jpg",
-  ];
+import styles from "./StartSlider.module.scss";
 
+import "swiper/scss";
+import "swiper/scss/autoplay";
+import "swiper/scss/effect-fade";
+const StartSlider = (props) => {
   return (
     <Swiper
       modules={[Autoplay, EffectFade]}
       navigation={true}
       autoplay={{ delay: 4000 }}
       effect={"fade"}
+      className={styles.swiper}
     >
-      {images.map((image, index) => (
-        <SwiperSlide>
-          <img src={image} alt="image" key={index} />
+      {props.slides.map((slide, index) => (
+        <SwiperSlide className={styles.slide}>
+          <img
+            src={slide.image}
+            alt="slide"
+            key={index}
+            className={styles.slideImage}
+          />
+
+          <p className={styles.text}>{slide.text}</p>
         </SwiperSlide>
       ))}
     </Swiper>
